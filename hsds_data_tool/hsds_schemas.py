@@ -375,8 +375,8 @@ hsds_contact_schema = pa.DataFrameSchema(
             required=True,
         ),
         "organization_id": pa.Column(
-            dtype="int",
-            description="The identifier of the organization for which this is a contact",
+            dtype="string",
+            description="Format: uuid. The identifier of the organization for which this is a contact",
             required=False,
             nullable=True,
         ),
