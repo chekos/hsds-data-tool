@@ -1,9 +1,9 @@
-# hsds-data
+# hsds-data-tool
 
-[![PyPI](https://img.shields.io/pypi/v/hsds-data.svg)](https://pypi.org/project/hsds-data/)
-[![Changelog](https://img.shields.io/github/v/release/chekos/hsds-data?include_prereleases&label=changelog)](https://github.com/chekos/hsds-data/releases)
-[![Tests](https://github.com/chekos/hsds-data/workflows/Test/badge.svg)](https://github.com/chekos/hsds-data/actions?query=workflow%3ATest)
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/chekos/hsds-data/blob/master/LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/hsds-data-tool.svg)](https://pypi.org/project/hsds-data-tool/)
+[![Changelog](https://img.shields.io/github/v/release/chekos/hsds-data-tool?include_prereleases&label=changelog)](https://github.com/chekos/hsds-data-tool/releases)
+[![Tests](https://github.com/chekos/hsds-data-tool/workflows/Test/badge.svg)](https://github.com/chekos/hsds-data-tool/actions?query=workflow%3ATest)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/chekos/hsds-data-tool/blob/master/LICENSE)
 
 Data validator and transformer for Human Services Data Standard.
 
@@ -11,7 +11,7 @@ Data validator and transformer for Human Services Data Standard.
 
 Install this tool using `pip`:
 
-    $ pip install hsds-data
+    $ pip install hsds-data-tool
 
 ## Usage
 
@@ -21,7 +21,7 @@ Usage instructions go here.
 
 To contribute to this tool, first checkout the code. Then create a new virtual environment:
 
-    cd hsds-data
+    cd hsds-data-tool
     python -m venv venv
     source venv/bin/activate
 

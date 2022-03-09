@@ -18,23 +18,23 @@ def get_long_description():
 
 
 setup(
-    name="hsds-data",
+    name="hsds-data-tool",
     description="Data validator and transformer for Human Services Data Specification.",
     long_description=get_long_description(),
     long_description_content_type="text/markdown",
     author="Sergio Sanchez",
-    url="https://github.com/chekos/hsds-data",
+    url="https://github.com/chekos/hsds-data-tool",
     project_urls={
-        "Issues": "https://github.com/chekos/hsds-data/issues",
-        "CI": "https://github.com/chekos/hsds-data/actions",
-        "Changelog": "https://github.com/chekos/hsds-data/releases",
+        "Issues": "https://github.com/chekos/hsds-data-tool/issues",
+        "CI": "https://github.com/chekos/hsds-data-tool/actions",
+        "Changelog": "https://github.com/chekos/hsds-data-tool/releases",
     },
     license="Apache License, Version 2.0",
     version=VERSION,
-    packages=["hsds_data"],
+    packages=["hsds_data_tool"],
     entry_points="""
         [console_scripts]
-        hsds-data=hsds_data.cli:cli
+        hsds-data-tool=hsds_data_tool.cli:cli
     """,
     install_requires=["typer==0.4.0", "pandera[hypotheses]==0.9.0", "rich>=11.0.0"],
     extras_require={
