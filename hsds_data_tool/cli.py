@@ -4,6 +4,7 @@ import typer
 import pandas as pd
 from rich.console import Console
 
+from . import __version__
 from .hsds_schemas import HSDS_SCHEMAS_ENUM, HSDS_SCHEMAS_DICT
 
 cli = typer.Typer()
@@ -37,12 +38,11 @@ def validate(
             data[col] = data[col].astype("string")
     schema = HSDS_SCHEMAS_DICT[f"{schema_name}_schema"]
     console.print(schema.validate(data, lazy=True).head())
-        
 
 
 def _version_callback(value: bool) -> None:
     if value:
-        console.print("0.1")
+        console.print(f"hsds-data-tool, v{__version__}")
         raise typer.Exit()
 
 

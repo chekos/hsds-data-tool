@@ -36,10 +36,16 @@ setup(
         [console_scripts]
         hsds-data-tool=hsds_data_tool.cli:cli
     """,
-    install_requires=["typer==0.4.0", "pandera[hypotheses]==0.9.0", "rich>=11.0.0"],
+    install_requires=[
+        "typer==0.4.0",
+        "pandera[hypotheses]==0.9.0",
+        "rich>=11.0.0",
+        "importlib-resources>=1.1.0; python_version < '3.9'",
+    ],
     extras_require={
         "test": test_requirements,
         "dev": dev_requirements,
     },
-    python_requires=">=3.6",
+    python_requires=">=3.7",
+    include_package_data=True,
 )
