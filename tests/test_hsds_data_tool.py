@@ -1,5 +1,5 @@
-from click.testing import CliRunner
-from hsds_data.cli import cli
+from typer.testing import CliRunner
+from hsds_data_tool.cli import cli
 
 
 def test_version():
@@ -7,4 +7,4 @@ def test_version():
     with runner.isolated_filesystem():
         result = runner.invoke(cli, ["--version"])
         assert result.exit_code == 0
-        assert result.output.startswith("cli, version ")
+        assert result.output.startswith("hsds-data-tool, v")
